@@ -1,0 +1,23 @@
+body {
+  font-family: "Helvetica", 'arial', sans-serif;
+  font-weight: 200;
+}
+
+.content {
+  background: #ff7;
+  height: 100%;
+  left: 0;
+  min-width: 425px;
+  padding: 40px 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: calc(100%/3);
+
+  .logo { height: auto; margin: auto auto 40px; max-width: 100%; }
+  h1 {
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+}
