@@ -16,7 +16,8 @@ body {
 }
 
 .content {
-  background: #ff7;
+  background: #efefef;
+  box-shadow: 5px 0 45px #888;
   height: calc(100% - 80px);
   left: 0;
   min-width: 425px;
@@ -32,5 +33,22 @@ body {
     font-weight: 200;
     letter-spacing: 4px;
     text-transform: uppercase;
+  }
+
+  .contact {
+    a {
+      color: #333;
+      border-bottom: 1px dotted #333;
+      display: table;
+      margin: 0 auto 1em;
+      padding: 5px 5px 4px;
+      text-decoration: none;
+
+      &:hover {
+        padding: 4px;
+        border: 1px dotted #333;
+        transition: border 2s ease;
+      }
+    }
   }
 }
