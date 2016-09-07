@@ -13,6 +13,7 @@ body {
   text-align: center;
   top: 0;
   width: calc(100%/3);
+  z-index: 10;
 
   .logo { height: auto; margin: auto auto 40px; max-width: 100%; }
   h1 {

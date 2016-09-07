@@ -2,6 +2,11 @@
 title: Foxy Foods Catering
 stylesheet: index
 --- 
+.background.Wallop.Wallop--fade
+  .Wallop-list
+    - 3.times do |i|
+      = content_tag 'div', class: (i == 0 ? 'Wallop-item Wallop-item--current' : 'Wallop-item') do
+        = image_tag "carousel/#{"%03d" % (i+1)}.jpg"
 .content
   = image_tag 'logo.png', class: 'logo'
   h1
