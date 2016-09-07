@@ -3,9 +3,21 @@ body {
   font-weight: 200;
 }
 
+.Wallop {
+  .Wallop-item {
+    max-height: 100vh;
+    overflow: hidden;
+    right: 0;
+    img {
+      height: auto;
+      min-width: 100vw;
+    }
+  }
+}
+
 .content {
   background: #ff7;
-  height: 100%;
+  height: calc(100% - 80px);
   left: 0;
   min-width: 425px;
   padding: 40px 0;
