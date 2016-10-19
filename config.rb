@@ -31,15 +31,15 @@ activate :meta_tags
 activate :imageoptim
 
 # S3 Settings
-# activate :s3_sync do |s3|
-#   s3.bucket = ''
-#   s3.aws_access_key_id = ENV['ACCESS_KEY_ID']
-#   s3.aws_secret_access_key = ENV['SECRET_KEY']
-#   s3.prefer_gzip = true
-#   s3.index_document = 'index.html'
-# end
-# default_caching_policy max_age:(60 * 60 * 24 * 90)
-# caching_policy 'text/html', max_age: 0, must_revalidate: true
+activate :s3_sync do |s3|
+  s3.bucket = 'foxyfoods.catering'
+  s3.aws_access_key_id = ENV['ACCESS_KEY_ID']
+  s3.aws_secret_access_key = ENV['SECRET_KEY']
+  s3.prefer_gzip = true
+  s3.index_document = 'index.html'
+end
+default_caching_policy max_age:(60 * 60 * 24 * 90)
+caching_policy 'text/html', max_age: 0, must_revalidate: true
 
 # Build-specific configuration
 configure :build do
