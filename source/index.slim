@@ -2,11 +2,9 @@
 title: Foxy Foods Catering
 stylesheet: index
 --- 
-.background.Wallop.Wallop--fade
-  .Wallop-list
-    - 3.times do |i|
-      = content_tag 'div', class: (i == 0 ? 'Wallop-item Wallop-item--current' : 'Wallop-item') do
-        = image_tag "carousel/#{"%03d" % (i+1)}.jpg"
+.backgrounds
+  - 6.times do |i|
+    = image_tag "carousel/#{"%03d" % (i+1)}.jpg"
 .content
   = image_tag 'logo.png', class: 'logo'
   h1
@@ -14,3 +12,7 @@ stylesheet: index
   .contact
     = link_to "205.399.6294", "tel:+12053996294"
     = link_to "tracy@foxyfoods.catering", "mailto:tracy@foxyfoods.catering"
+
+  .footer
+    | Site by 
+    = link_to 'Patrick Lindsay', 'http://thatdarnpat.com'
