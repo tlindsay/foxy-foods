@@ -23,7 +23,7 @@ a:hover { cursor: pointer; }
   width: calc(100%/3);
   z-index: 10;
 
-  @media(screen and max-width: 425px) {
+  @media(screen and max-width: 625px) {
     width: 100%;
     background: rgba(#efefef, 0.8);
   }
@@ -70,6 +70,10 @@ a:hover { cursor: pointer; }
       margin: 0 auto;
       text-align: center;
       width: 60%;
+    }
+
+    @media(screen and max-height: 600px) {
+      margin-top: 0;
     }
   }
 
