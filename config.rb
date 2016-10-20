@@ -26,13 +26,12 @@ set :images_dir, 'images'
 activate :directory_indexes
 activate :dotenv
 activate :autoprefixer
-activate :inliner
 activate :meta_tags
 activate :imageoptim
 
 # S3 Settings
 activate :s3_sync do |s3|
-  s3.bucket = 'foxyfoods.catering'
+  s3.bucket = 'foxyfoodsgordo.com'
   s3.aws_access_key_id = ENV['ACCESS_KEY_ID']
   s3.aws_secret_access_key = ENV['SECRET_KEY']
   s3.prefer_gzip = true
