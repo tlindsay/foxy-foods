@@ -3,7 +3,7 @@ window.onload = () ->
   imgs = document.querySelectorAll '.backgrounds img'
   i = 2
 
-  setInterval () =>
+  setInterval () ->
     document.body.style.background = "url(#{imgs[i % imgs.length].src})"
     i++
   , 3000
