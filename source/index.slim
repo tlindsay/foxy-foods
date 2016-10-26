@@ -4,7 +4,7 @@ stylesheet: index
 --- 
 .backgrounds
   - 6.times do |i|
-    = image_tag "carousel/#{"%03d" % (i+1)}.jpg"
+    .img data={src: "images/carousel/#{"%03d" % (i+1)}.jpg"}
 .content
   = image_tag 'logo.png', class: 'logo'
   h1
