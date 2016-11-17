@@ -5,17 +5,26 @@ stylesheet: index
 .backgrounds
   - 6.times do |i|
     .img data={src: "images/carousel/#{"%03d" % (i+1)}.jpg"}
-.content
-  = image_tag 'logo.png', class: 'logo'
-  h1
+.content[itemscope itemtype="http://schema.org/FoodEstablishment"]
+  = image_tag 'logo.png', class: 'logo', itemprop: 'logo'
+  h1[itemprop="founder" content="Larry and Tracy Hardy"]
     |  Larry &amp; Tracy Hardy
   .contact
-    = link_to "205.399.6294", "tel:+12053996294"
-    = link_to "foxyfoodsgordo@gmail.com", "mailto:foxyfoodsgordo@gmail.com"
+    = link_to "205.399.6294", "tel:+12053996294", itemprop: 'telephone'
+    = link_to "foxyfoodsgordo@gmail.com", "mailto:foxyfoodsgordo@gmail.com", itemprop: 'email'
   .partners
     | Proud partners of
     = link_to 'http://foxwoodevents.com', class: 'partner-link' do
       = image_tag 'foxwood.png', class: 'partner-img'
+  .data
+    .area[itemprop="areaServed" itemscope itemtype="http://schema.org/Place"]
+      .address[itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"]
+        meta[itemprop="addressLocality" content="Gordo"]
+        meta[itemprop="addressRegion" content="AL"]
+        meta[itemprop="postalCode" content="35466"]
+    meta[itemprop="name" content="Foxy Foods Catering"]
+    meta[itemprop="servesCuisine" content="Catering"]
+    meta[itemprop="url" content="http://foxyfoodsgordoc.com"]
 
   .footer
     | Site by 
