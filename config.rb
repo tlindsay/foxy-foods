@@ -28,6 +28,7 @@ activate :dotenv
 activate :autoprefixer
 activate :meta_tags
 activate :imageoptim
+activate :inliner
 
 # S3 Settings
 activate :s3_sync do |s3|

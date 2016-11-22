@@ -6,7 +6,7 @@ html
     meta[name="description" content="Foxy Foods Catering - Proud partners of Foxwood Events. Based in Gordo, AL."]
     title
       = current_page.data.title || "Foxy Foods Catering"
-    = stylesheet_link_tag "normalize", "all", current_page.data.stylesheet
+    = stylesheet_inline_tag "normalize", "all", current_page.data.stylesheet
   body[class=page_classes]
     = yield
     = javascript_include_tag  "all", defer: true, async: true
