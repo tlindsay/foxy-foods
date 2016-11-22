@@ -8,6 +8,6 @@ window.onload = () ->
   i = 2
 
   setInterval () ->
-    document.body.style.background = "url(#{imgs[i % imgs.length].src})"
+    document.body.style.backgroundImage = "url(#{imgs[i % imgs.length].src})"
     i++
   , 3000

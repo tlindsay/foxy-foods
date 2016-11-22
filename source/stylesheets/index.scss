@@ -5,8 +5,10 @@ $shadow: #888;
 
 body {
   background: url("../images/carousel/001.jpg");
-  background-position: center !important;
-  background-size: cover !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Helvetica", 'arial', sans-serif;
   font-weight: 200;
   transition: background 1s ease-in-out;
